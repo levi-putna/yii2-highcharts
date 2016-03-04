@@ -1,11 +1,15 @@
 {
-	"name": "levi-putna/yii2-highcharts",
+	"name": "consynki/yii2-highcharts",
 	"description": "Highcharts widget for Yii 2 Framework.",
 	"keywords": ["yii2", "extension", "widget", "highcharts", "highstock", "highmaps"],
-	"homepage": "https://github.com/miloschuman/yii2-highcharts",
+	"homepage": "https://github.com/levi-putna/yii2-highcharts/",
 	"type": "yii2-extension",
 	"license": "MIT",
 	"authors": [
+		{
+			"name": "Levi Putna",
+			"email": "levi.putna@consynki.com"
+		},
 		{
 			"name": "Milo Schuman",
 			"email": "miloschuman@gmail.com"
@@ -17,7 +21,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"miloschuman\\highcharts\\": "src/"
+			"consynki\\highcharts\\": "src/"
 		}
 	}
 }
