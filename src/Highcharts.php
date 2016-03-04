@@ -102,7 +102,23 @@ class Highcharts extends Widget
         // prepare and register JavaScript code block
         $jsOptions = Json::encode($this->options);
         $setupOptions = Json::encode($this->setupOptions);
-        $js = "Highcharts.setOptions($setupOptions); new Highcharts.{$this->constr}($jsOptions);";
+        
+        //If remote loaded, render when callback completed. Ende render on page load
+         if(array_key_exists('url', $this->options)){
+            $js = "$.getJSON('" . $this->options['url'] . "', function (data) {
+                Highcharts.setOptions($setupOptions);
+                var options = $jsOptions;
+                if(data.series){
+                    options.series = data.series;
+                } if(data.categories){
+                    options.categories = data.categories;
+                }
+                new Highcharts.{$this->constr}(options);
+            });";
+        }else{
+            $js = "Highcharts.setOptions($setupOptions); new Highcharts.{$this->constr}($jsOptions);";
+        }
+        
         $key = __CLASS__ . '#' . $this->id;
         if (is_string($this->callback)) {
             $js = "function {$this->callback}(data) {{$js}}";
