@@ -7,7 +7,7 @@ The `'callback'` option allows you to initialize the chart after an AJAX request
 other preprocessing.
 
 ```php
-use miloschuman\highcharts\Highstock;
+use consynki\highcharts\Highstock;
 use yii\web\JsExpression;
 
 $this->registerJs('$.getJSON("//www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?", myCallbackFunction);');
@@ -58,7 +58,7 @@ The `'callback'` option allows you to initialize the chart after an AJAX request
 other preprocessing.
 
 ```php
-use miloschuman\highcharts\Highstock;
+use consynki\highcharts\Highstock;
 use yii\web\JsExpression;
 
 $js = <<<MOO

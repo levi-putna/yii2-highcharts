@@ -6,7 +6,7 @@ This example is ported from the Highcharts ["Column, Line and Pie" demo](http://
 with optional exporting module and Grid Light theme enabled.
 
 ```php
-use miloschuman\highcharts\Highcharts;
+use consynki\highcharts\Highcharts;
 use yii\web\JsExpression;
 
 echo Highcharts::widget([

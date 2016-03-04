@@ -9,7 +9,7 @@
  * @version 4.2.3
  */
 
-namespace miloschuman\highcharts;
+namespace consynki\highcharts;
 
 use yii\web\AssetBundle;
 

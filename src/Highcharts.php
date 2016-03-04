@@ -9,7 +9,7 @@
  * @version 4.2.3
  */
 
-namespace miloschuman\highcharts;
+namespace consynki\highcharts;
 
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
@@ -23,7 +23,7 @@ use yii\web\View;
  *
  * To use this widget, you can insert the following code in a view:
  * ```php
- * echo \miloschuman\highcharts\Highcharts::widget([
+ * echo \consynki\highcharts\Highcharts::widget([
  *     'options' => [
  *         'title' => ['text' => 'Fruit Consumption'],
  *         'xAxis' => [

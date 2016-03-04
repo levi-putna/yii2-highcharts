@@ -9,7 +9,7 @@
  * @version 4.2.3
  */
 
-namespace miloschuman\highcharts;
+namespace consynki\highcharts;
 
 use JsonSerializable;
 use yii\base\Component;
@@ -28,8 +28,8 @@ use yii\helpers\ArrayHelper;
  *
  * Basic usage:
  * ```php
- * use miloschuman\highcharts\Highstock;
- * use miloschuman\highcharts\SeriesDataHelper;
+ * use consynki\highcharts\Highstock;
+ * use consynki\highcharts\SeriesDataHelper;
  *
  * Highstock::widget([
  *     'options' => [

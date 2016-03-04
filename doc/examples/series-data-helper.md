@@ -6,8 +6,8 @@ Here is a basic example, which uses SeriesDataHelper to extract and process two 
 the same data provider.
 
 ```php
-use miloschuman\highcharts\Highstock;
-use miloschuman\highcharts\SeriesDataHelper;
+use consynki\highcharts\Highstock;
+use consynki\highcharts\SeriesDataHelper;
 
 $data = [
     ['date' => '2006-05-14T20:00:00-0400', 'open' => 67.37, 'high' => 68.38, 'low' => 67.12, 'close' => 67.79, 'volume' => 18921051],
@@ -54,8 +54,8 @@ Your source data needn't have traditional column names to take advantage of Seri
 use the numerical index in place of the string key.
 
 ```php
-use miloschuman\highcharts\Highstock;
-use miloschuman\highcharts\SeriesDataHelper;
+use consynki\highcharts\Highstock;
+use consynki\highcharts\SeriesDataHelper;
 
 // this is the same data as above but without string keys and using a Unix timestamp for the date
 $data = [
@@ -104,8 +104,8 @@ formatters. These can be any [PHP callable](https://php.net/manual/en/language.t
 including PHP built-in functions, user defined functions, class methods, and closures.
 
 ```php
-use miloschuman\highcharts\Highstock;
-use miloschuman\highcharts\SeriesDataHelper;
+use consynki\highcharts\Highstock;
+use consynki\highcharts\SeriesDataHelper;
 
 // back to the original data from the first example
 $data = [
